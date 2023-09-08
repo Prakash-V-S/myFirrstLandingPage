@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifications</title>
+    <style>
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+
+            /* Adjust font sizes for smaller screens */
+            h1 {
+                font-size: 60px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .button-container {
+            text-align: center;
+            /* Center the button horizontally */
+            margin-top: 20px;
+            /* Add margin for spacing */
+        }
+
+        .button {
+            padding: 10px 0;
+            /* Remove horizontal padding for consistent button size */
+            width: 200px;
+            /* Set a fixed width for buttons */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This Page is under construction</h1>
+    <h2>Coming Soon!...............</h2>
+    <div class="button-container">
+        <button class="button" style="background-color: aliceblue; color: black;"
+            onclick="openProject('../landingpage/landing.html')">Back to Home Page</button>
+    </div>
+    <script>
+        function openProject(projectURL) {
+            window.open(projectURL, '_self');
+        }
+    </script>
+</body>
+
+</html>

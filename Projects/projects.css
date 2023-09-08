@@ -1,0 +1,80 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout */
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout */
+  align-items: center;
+  margin: 10px 0; /* Adjust margin for better spacing */
+}
+
+.button {
+  padding: 10px 0; /* Remove horizontal padding for consistent button size */
+  width: 200px; /* Set a fixed width for buttons */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  margin-top: 5px; /* Add margin for better spacing */
+  text-align: center; /* Center the text */
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.project-label {
+  font-size: 18px;
+  color: #060404;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  font-weight: bolder;
+  align-items: center;
+  justify-items: center;
+}
+/*------------------*/
+@keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+body {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+
+/*---------*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.column {
+  width: 48%; /* Adjust as needed */
+}
+
+.button-wrapper {
+  margin: 10px 0;
+}
+
+/* Add any other styles as needed */

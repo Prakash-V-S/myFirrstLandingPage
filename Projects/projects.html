@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="projects.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a9b06f62c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body><h2>My Projects</h2>
+
+  <div class="container">
+    
+    <div class="column">
+      
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('removeDuplications/removedupli.html')">Project 1</button>
+        <div class="project-label">Remove Duplicates</div>
+      </div>
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('sumofPositiveNumbers/sumofPositive.html')">Project 2</button>
+        <div class="project-label">Sum of Positive No</div>
+      </div>
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('printFirstLetters/printFirst.html')">Project 3</button>
+        <div class="project-label">Print First Letters</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('colourFlipper/Flipper.html')">Project 4</button>
+        <div class="project-label">Color Swapper</div>
+      </div>
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('memory-game/memory.html')">Project 5</button>
+        <div class="project-label">Memory-game</div>
+      </div>
+      <div class="button-wrapper">
+        <button class="button" onclick="openProject('Stopwatch/stopwatch.html')">Project 6</button>
+        <div class="project-label">Stop-Watch</div>
+      </div>
+    </div>
+  </div>
+  <button class="button" style="background-color: aliceblue; color: black;"
+    onclick="openProject('../landingpage/landing.html')">Back to Home Page</button>
+
+  <script>
+    function openProject(projectURL) {
+      window.open(projectURL, '_self');
+    }
+  </script>
+</body>
+
+</html>

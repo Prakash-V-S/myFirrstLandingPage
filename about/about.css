@@ -1,0 +1,59 @@
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: px; /* Adjust font size for responsiveness */
+    color: #060404;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-weight: bolder;
+    border: 3px solid #060404; /* Add a thick border */
+    border-radius: 10px; /* Add rounded corners */
+    margin: 10px; /* Add some spacing between labels */
+    margin-top: 10%;
+  }
+  .button {
+    padding: 10px 0; /* Remove horizontal padding for consistent button size */
+    width: 200px; /* Set a fixed width for buttons */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-top: 5px; /* Add margin for better spacing */
+    text-align: center; /* Center the text */
+  }
+  
+  .button:hover {
+    background-color: #032243;
+    transform: scale(1.05);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;}
+  
+  @media (max-width: 768px) {
+    /* Apply different styles for screens smaller than 768px (typical mobile devices) */
+    .all {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,82 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation bar */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style content sections */
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30%;
+}
+/*------------------------------------*/
+/* ... Your existing CSS ... */
+
+/* Style the mobile menu icon */
+.menu-icon {
+    display: none; /* Hide the icon by default */
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide the regular navigation menu */
+    }
+
+    nav ul.show {
+        display: flex; 
+        flex-direction: column;
+        background-color: #007BFF;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav ul.show li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
